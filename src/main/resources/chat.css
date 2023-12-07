@@ -1,0 +1,65 @@
+#returnButton, #phoneCallButton, #videoCallButton,
+#imageButton, #sendButton, #voiceButton {
+    -fx-pref-width: 50;
+    -fx-pref-height: -fx-pref-width;
+    -fx-background-color: transparent;
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-border-color: darkgray;
+}
+
+#returnButton {
+    -fx-graphic: url("/icons/return.png");
+}
+
+#phoneCallButton {
+    -fx-graphic: url("/icons/pcall.png");
+}
+
+#videoCallButton {
+    -fx-graphic: url("/icons/vcall.png");
+}
+
+#avatar {
+    -fx-image: url("/avatar.png");
+}
+
+#imageButton {
+    -fx-graphic: url("/icons/image.png");
+}
+
+#sendButton {
+    -fx-pref-width: 60;
+    -fx-background-color: grey;
+    -fx-graphic: url("/icons/send.png");
+}
+
+#voiceButton {
+    -fx-graphic: url("/icons/record.png");
+}
+
+#returnButton:hover, #phoneCallButton:hover,
+#videoCallButton:hover, #imageButton:hover,
+#voiceButton:hover {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 50%, grey, darkgray 70%, transparent);
+}
+
+#sendButton:hover {
+    -fx-background-color: darkgray;
+}
+
+#chatArea {
+    -fx-pref-width: 250;
+    -fx-pref-height: 60;
+    -fx-background-color: -fx-text-box-border, -fx-control-inner-background;
+    -fx-background-radius: 40;
+    -fx-border-radius: 40;-fx-border-width: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+#statusImg {
+    -fx-background-radius: 50;
+    -fx-image: url("/icons/online.png");
+    -fx-background-color: transparent;
+}
